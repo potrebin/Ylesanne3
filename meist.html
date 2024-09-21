@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="et">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ülesanne 3 Bootstrap">
+  <meta name="author" content="">
+  <title>Ülesanne 3 Bootstrap</title>
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Bootstrap ikoonid-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!--minu CSS-->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+<!-- Navigatsioon --->
+  <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand me-5" href="index.html">Bootstrap 5</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Naised</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Mehed</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Kingad</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Saapad</a></li>
+            </ul>
+          </li>
+        </ul>
+       
+		<!--Otsi vorm -->
+        <form class="d-flex me-1">
+          <div class="input-group">
+            <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
+            <input class="form-control" type="search" placeholder="Otsi" aria-label="Search">
+          </div>
+        </form>
+      </div>
+      <div class="float-end">
+       
+	   <!--Login ikoon-->
+        <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
+        
+	   <!--Ostukorvi ikoon-->
+     <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
+      
+	  </div>
+    </div>
+  </nav>
+  
+  <!--Tee ise: siia konteinerisse lisa pildikarusell-->
+  <div class="container">
+    <div class="top-space"></div>
+    <div class="empty-space"></div>
+    <div class="p-2">
+        <h1>Meist</h1>
+    </div>
+
+    <div class="p-2">
+        <h2>Meeskond</h2>
+    </div>
+    <img src="team.jpg" class= "about d-none d-xl-block" style="float: right">
+    <p>Lorem ipsum leo quis metus laoreet accumsan pulvinar eget est. Etiam et efficitur odio, et aliquam arcu. Donec sit amet erat rutrum, venenatis orci sed, gravida risus. Fusce congue vel ante vel auctor. Proin egestas sem a massa varius tincidunt. Cras in diam et ligula lacinia aliquet. Curabitur imperdiet metus vitae dapibus luctus. Sed et iaculis nisi, quis tincidunt sem. Sed non magna hendrerit, vestibulum magna vel, suscipit ligula. Integer ipsum elit, suscipit ac dui in, posuere tristique risus. Nulla facilisi. Curabitur et ante tincidunt, interdum augue at, elementum orci. Quisque est ipsum, hendrerit eu metus vel, efficitur fermentum ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce egestas, metus et tristique mattis, dui justo efficitur magna, id lacinia urna mi ac ex. Nulla rutrum libero ut finibus fringilla.</p>
+    <p>Sed facilisis risus eu massa porta, at tristique turpis rutrum. Maecenas ac massa lectus. Ut faucibus ipsum ut sem varius, sed fermentum justo pretium. Integer quis commodo felis. Phasellus eros nisl, sodales et magna id, tristique mattis eros. Integer felis odio, sagittis ut condimentum nec, interdum ac est. Suspendisse nec leo nunc. Quisque accumsan nibh ac tempor maximus. Sed placerat, tellus ut imperdiet efficitur, lorem neque pharetra odio, consequat efficitur ex ex at ipsum.</p>
+
+    <p class="d-inline-flex gap-1">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#meie-kohta" aria-expanded="true" aria-controls="meie-kohta">
+          Detailsemalt meie kohta
+        </button>
+      </p>
+    <div class="collapse show" id="meie-kohta">
+        <div class="container">
+          
+            <div class="row">
+                <div class="col-3">
+                  <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Asutaja</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Meeskond</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Ajalugu</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Eesmärgid</a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy" tabindex="0" style="max-height: 80vh; overflow: scroll;">
+                    <h4 id="list-item-1">Asutaja</h4>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p>Lorem ipsum finibus pharetra vehicula. Sed et tellus viverra, maximus ante eu, tincidunt sem. Praesent blandit tortor nec orci varius sollicitudin. Cras ullamcorper molestie odio. Nullam mattis mattis enim, vitae dignissim nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam erat volutpat. Pellentesque eu risus vitae massa varius hendrerit. Ut tempor a dui eu porttitor. Cras eu justo non purus laoreet vehicula. Phasellus vestibulum, orci sit amet porta vulputate, nisl mi semper massa, quis congue nunc ipsum non risus.</p>
+                                <p>Proin a semper quam. Cras id lacus odio. Proin eu rhoncus tellus. Quisque libero lorem, tristique nec aliquam ut, dignissim id turpis. Donec vel lacus a nisi consectetur sagittis. Quisque hendrerit eleifend malesuada. Mauris sollicitudin facilisis commodo. Vivamus dignissim tristique sagittis. Cras rhoncus sed leo ut vehicula. Duis auctor volutpat purus, quis tincidunt neque suscipit at. Quisque mattis, nunc et imperdiet aliquet, tortor mauris dapibus tellus, ac vulputate lorem mauris eget erat.</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="person0.png" class="person-img">
+                            </div>
+                        </div>
+                    <h4 id="list-item-2">Meeskonnaliikmed</h4>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p>Aenean quis sagittis turpis. Pellentesque placerat iaculis ipsum, id interdum erat lacinia non. Nulla nec porttitor odio. Phasellus consequat risus ornare congue tincidunt. Cras finibus, nulla vel euismod dapibus, neque mauris luctus quam, ornare tempor felis purus eget augue. Mauris ut tempus neque, sit amet imperdiet nulla. Vivamus tincidunt congue elementum. Sed dictum posuere est. Nullam vulputate mi in convallis semper. Sed venenatis semper consectetur. Nullam nec blandit justo. Vestibulum vulputate, nisl et lobortis iaculis, justo est posuere ex, quis volutpat diam massa quis lectus. Nunc quam lectus, malesuada a dapibus ac, pulvinar at lacus. Nullam a massa in nulla porta mollis. Quisque dictum urna sed arcu cursus pharetra.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="person1.jpg" class="person-img">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p>Aenean felis nunc, facilisis ut placerat a, ullamcorper ut velit. Vestibulum eleifend, ex in pellentesque auctor, sapien mi bibendum leo, ac aliquet dui nulla aliquet tortor. Mauris malesuada ante eget dui finibus, vitae tincidunt lorem efficitur. Cras vitae erat non elit consequat posuere in in augue. Suspendisse potenti. Phasellus commodo molestie odio, ut condimentum arcu tristique eget. Morbi sed velit sed enim sodales feugiat. Sed a aliquet libero. Morbi eget gravida ante. Vivamus rutrum diam eu erat gravida tempor. Nam ac ex porta, facilisis turpis pretium, rhoncus augue.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="person2.jpg" class="person-img">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p>Praesent vitae est non risus ultrices dignissim. Donec porttitor et mauris eu pretium. Curabitur dignissim, risus in sagittis pretium, sapien metus facilisis ex, id aliquam dolor est sagittis elit. Aliquam augue metus, hendrerit sit amet felis eget, porttitor ornare enim. Duis leo felis, varius vel eros a, tristique congue lacus. Duis justo neque, aliquet ut vestibulum nec, tincidunt ac tortor. Fusce tortor orci, molestie vitae est non, pharetra posuere metus. Morbi eu eleifend neque. In blandit mattis placerat. Donec lobortis mollis ligula in venenatis. Proin ac mi volutpat, feugiat eros et, elementum ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac odio quam. Suspendisse blandit hendrerit ex eget imperdiet. In mollis porttitor nulla in bibendum.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="person3.jpg" class="person-img">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <p>Nullam congue volutpat mi, eget ultrices tortor porta vitae. Phasellus ac molestie purus. Etiam porttitor sem eget lacus lacinia, scelerisque aliquam urna eleifend. Curabitur lobortis ornare porttitor. Phasellus massa lacus, congue id elit a, efficitur facilisis magna. Duis ut nunc at libero molestie malesuada. Nulla volutpat mauris in libero ultricies, tristique pretium enim cursus.</p>
+                            <p>Suspendisse potenti. Phasellus malesuada lorem nec felis commodo finibus. Sed placerat eleifend ipsum quis fringilla. Nulla molestie consequat lacus a aliquet. Maecenas mattis vitae velit ac maximus. Sed eleifend lorem eget tincidunt interdum. Phasellus hendrerit vehicula ipsum sed rhoncus. Maecenas congue velit ante, nec condimentum est elementum nec. Nam laoreet, risus a venenatis porta, dolor ante luctus ipsum, vitae feugiat turpis ipsum eu ante. Aliquam id lacus nisi. Ut malesuada feugiat interdum.</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="person4.png" class="person-img">
+                        </div>
+                    </div>
+
+                    <h4 id="list-item-3">Ajalugu</h4>
+                    <p>Phasellus id ipsum a ipsum suscipit varius at a est. Aenean tempor accumsan luctus. Ut imperdiet enim sollicitudin commodo lobortis. Sed ullamcorper lectus mauris, a sodales tellus laoreet a. Sed consequat luctus vehicula. Phasellus accumsan nisi sit amet nibh rutrum condimentum. Vestibulum et pharetra nunc. Nunc efficitur, mauris id rutrum porttitor, leo orci mollis velit, a dictum nisi mi eu leo. Phasellus id pharetra neque. Vivamus accumsan consequat tellus, eu vehicula nulla venenatis vel. Nunc laoreet facilisis leo, quis rutrum velit. Cras cursus, elit sed aliquet mollis, ante dui maximus lorem, in placerat neque eros ut magna. Suspendisse fringilla mauris vel aliquam tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <p>Morbi quam dui, egestas et rutrum ut, posuere sit amet dui. Vestibulum facilisis, massa vel ullamcorper faucibus, metus mi placerat elit, sed molestie ipsum dui nec tellus. Nunc gravida vel mauris quis maximus. Morbi vitae dui aliquet, bibendum tellus non, hendrerit nisl. Ut eu finibus justo, nec vestibulum nulla. Praesent convallis ullamcorper dui, at posuere dui ullamcorper ut. Donec eget nibh est. Quisque convallis lorem felis, nec aliquam augue tempus a. Suspendisse ut nunc facilisis, tempus nisi at, scelerisque lorem. Pellentesque commodo sed mauris vel molestie.</p>
+                    <h4 id="list-item-4">Eesmärgid</h4>
+                    <p>Phasellus id ipsum a ipsum suscipit varius at a est. Aenean tempor accumsan luctus. Ut imperdiet enim sollicitudin commodo lobortis. Sed ullamcorper lectus mauris, a sodales tellus laoreet a. Sed consequat luctus vehicula. Phasellus accumsan nisi sit amet nibh rutrum condimentum. Vestibulum et pharetra nunc. Nunc efficitur, mauris id rutrum porttitor, leo orci mollis velit, a dictum nisi mi eu leo. Phasellus id pharetra neque. Vivamus accumsan consequat tellus, eu vehicula nulla venenatis vel. Nunc laoreet facilisis leo, quis rutrum velit. Cras cursus, elit sed aliquet mollis, ante dui maximus lorem, in placerat neque eros ut magna. Suspendisse fringilla mauris vel aliquam tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="p-2 mt-5">
+        <h2>Miks meid usaldatakse</h2>
+    </div>
+
+    
+    <p>Nam malesuada elit et augue efficitur, dignissim feugiat magna egestas! Sed ornare odio non lacus fringilla, at pharetra massa vulputate. Lorem ipsum dolor sit amet. Fusce porta nisl quis ex condimentum, vitae interdum nisi aliquam
+        <button type="button" class="btn btn-lg btn-danger fs-6 m-1 p-1" data-bs-toggle="popover" data-bs-title="Meie saladus" data-bs-content="Väga kvaliteetsed saapad!" data-bs-placement="bottom">ipsum ipsum</button>
+        eu enim gravida mauris ornare sodales a et nulla.
+    </p>
+    
+
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Meie pood</th>
+            <th scope="col">Poodide keskmine</th>
+            <th scope="col">Meie ränking Eestis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <th scope="row">Klientide rahuldatus</th>
+            <td>90%</td>
+            <td>70%</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th scope="row">Inimvoog</th>
+            <td>100 000</td>
+            <td>80 000</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">Kuusissetulek</th>
+            <td>500 000 €</td>
+            <td>200 000 €</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">Skoor</th>
+            <td>999</td>
+            <td>950</td>
+            <td>5</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">Skoor</th>
+            <td>999</td>
+            <td>777</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    
+
+  </div>
+  
+  
+  <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
+  <footer class="footer bg-dark text-light">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg">
+          <div class="float-lg-start">
+            <h4 class="mb-2">Kontakt</h4>
+            <p class="mb-0">Tel: 5555</p>
+            <p class="mb-0">Aadress</p>
+            <p class="mb-4"><a href="#">pood@email.ee</a></p>
+          </div>
+        </div>
+
+        <div class="col-lg">
+          <div class="float-lg-start">
+            <h4 class="mb-2">Info</h4>
+            <p class="mb-0">© 2024</p>
+            <p class="mb-4"><a href="#">Meist</a></p>
+          </div>
+        </div>
+  
+        <div class="col-lg">
+          <div class="float-lg-end">
+            <a class="btn btn-dark text-light" href="#" type="submit"><span class="bi bi-facebook h2"></span></button></a>
+            <a class="btn btn-dark text-light" href="#" type="submit"><span class="bi bi-instagram h2"></span></button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  
+  <!--Popper.js-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  
+  <!--Bootstrap.js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+</body>
+
+</html>
